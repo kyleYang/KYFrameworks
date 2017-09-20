@@ -38,6 +38,7 @@ All of the code is managed by Kyle Yang, It's the app architecture
     #ss.dependency "Alamofire", "~> 4.1"
     ss.dependency "KYFrameworks/UI"
     ss.dependency "KYFrameworks/Service"
+    ss.dependency "KYFrameworks/Util"
     #ss.framework  = "Foundation"
   end
 
@@ -45,14 +46,27 @@ All of the code is managed by Kyle Yang, It's the app architecture
     ss.source_files  = "Sources/UI/**/*"
     s.dependency 'RxSwift', '~> 4.0.0-beta.0'
     s.dependency 'RxCocoa', '~> 4.0.0-beta.0'
+    s.dependency 'SnapKit', '~> 4.0.0'
+    s.dependency 'DZNEmptyDataSet'
+    s.dependency 'MJRefresh'
     #ss.framework  = "Foundation"
   end
 
+  #subspec of Service like network
   s.subspec "Service" do |ss|
     ss.source_files = "Sources/Service/**/*"
     #ss.dependency "Moya/Core"
     #ss.dependency "RxSwift", "~> 3.3"
   end
+
+  #subspec of utilty
+  s.subspec "Util" do |ss|
+    ss.source_files = "Sources/Util/**/*"
+    #ss.dependency "Moya/Core"
+    #ss.dependency "RxSwift", "~> 3.3"
+  end
+
+
 
 
   # s.resource_bundles = {

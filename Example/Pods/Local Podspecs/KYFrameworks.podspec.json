@@ -20,6 +20,23 @@
     "ios": "9.0"
   },
   "source_files": "KYFrameworks/Classes/**/*",
+  "dependencies": {
+    "RxSwift": [
+      "~> 4.0.0-beta.0"
+    ],
+    "RxCocoa": [
+      "~> 4.0.0-beta.0"
+    ],
+    "SnapKit": [
+      "~> 4.0.0"
+    ],
+    "DZNEmptyDataSet": [
+
+    ],
+    "MJRefresh": [
+
+    ]
+  },
   "subspecs": [
     {
       "name": "All",
@@ -29,6 +46,9 @@
 
         ],
         "KYFrameworks/Service": [
+
+        ],
+        "KYFrameworks/Util": [
 
         ]
       }
@@ -40,6 +60,10 @@
     {
       "name": "Service",
       "source_files": "Sources/Service/**/*"
+    },
+    {
+      "name": "Util",
+      "source_files": "Sources/Util/**/*"
     }
   ]
 }
