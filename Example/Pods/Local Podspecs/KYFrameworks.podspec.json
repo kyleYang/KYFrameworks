@@ -1,0 +1,45 @@
+{
+  "name": "KYFrameworks",
+  "version": "4.0.0",
+  "summary": "The App Framework for KyleYang",
+  "description": "All of the code is managed by Kyle Yang, It's the app architecture",
+  "homepage": "https://github.com/kyleYang/KYFrameworks",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kyleYang": "yangzychina@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/kyleYang/KYFrameworks.git",
+    "tag": "4.0.0"
+  },
+  "default_subspecs": "All",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "KYFrameworks/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "All",
+      "source_files": "Sources/UI/",
+      "dependencies": {
+        "KYFrameworks/UI": [
+
+        ],
+        "KYFrameworks/Service": [
+
+        ]
+      }
+    },
+    {
+      "name": "UI",
+      "source_files": "Sources/UI/"
+    },
+    {
+      "name": "Service",
+      "source_files": "Sources/Service/"
+    }
+  ]
+}
