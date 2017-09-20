@@ -43,8 +43,8 @@ All of the code is managed by Kyle Yang, It's the app architecture
 
   s.subspec "UI" do |ss|
     ss.source_files  = "Sources/UI/**/*"
-    #ss.dependency "Alamofire", "~> 4.1"
-    #ss.dependency "Result", "~> 3.0"
+    s.dependency 'RxSwift', '~> 4.0.0-beta.0'
+    s.dependency 'RxCocoa', '~> 4.0.0-beta.0'
     #ss.framework  = "Foundation"
   end
 
