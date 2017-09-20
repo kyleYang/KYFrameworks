@@ -23,7 +23,7 @@
   "subspecs": [
     {
       "name": "All",
-      "source_files": "Sources/UI/",
+      "source_files": "Sources/All/**/*",
       "dependencies": {
         "KYFrameworks/UI": [
 
@@ -35,11 +35,11 @@
     },
     {
       "name": "UI",
-      "source_files": "Sources/UI/"
+      "source_files": "Sources/UI/**/*"
     },
     {
       "name": "Service",
-      "source_files": "Sources/Service/"
+      "source_files": "Sources/Service/**/*"
     }
   ]
 }

@@ -34,7 +34,7 @@ All of the code is managed by Kyle Yang, It's the app architecture
   s.source_files = 'KYFrameworks/Classes/**/*'
 
   s.subspec "All" do |ss|
-    ss.source_files  = "Sources/UI/"
+    ss.source_files  = "Sources/All/**/*"
     #ss.dependency "Alamofire", "~> 4.1"
     ss.dependency "KYFrameworks/UI"
     ss.dependency "KYFrameworks/Service"
@@ -42,14 +42,14 @@ All of the code is managed by Kyle Yang, It's the app architecture
   end
 
   s.subspec "UI" do |ss|
-    ss.source_files  = "Sources/UI/"
+    ss.source_files  = "Sources/UI/**/*"
     #ss.dependency "Alamofire", "~> 4.1"
     #ss.dependency "Result", "~> 3.0"
     #ss.framework  = "Foundation"
   end
 
   s.subspec "Service" do |ss|
-    ss.source_files = "Sources/Service/"
+    ss.source_files = "Sources/Service/**/*"
     #ss.dependency "Moya/Core"
     #ss.dependency "RxSwift", "~> 3.3"
   end
